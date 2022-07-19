@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-public class TestController {
+public class MainController {
 
 	@RequestMapping("/main")
 	public static String goMain() {
