@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class MainController {
 
-	@RequestMapping("/main")
+	@RequestMapping("/")
 	public static String goMain() {
 		// TODO Auto-generated method stub
 		return "contents/main";
