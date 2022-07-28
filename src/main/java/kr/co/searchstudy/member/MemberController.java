@@ -11,6 +11,7 @@ public class MemberController {
 
 	@Autowired
 	private MemberService memberService;
+
 	
 	@ResponseBody
 	@GetMapping("/oauth/kakao")
@@ -19,6 +20,12 @@ public class MemberController {
 		System.out.println(code);
 		String accessToken = memberService.getKaKaoAccessToken(code);
 		memberService.createKakaoUser(accessToken);
+	}
+	
+	@ResponseBody
+	@GetMapping("/oauth/kakao/logout")
+	public void kakaoLogout() throws Exception {
+		memberService.setKaKaoLogout("bkR8BG32zlKaaelRG0QImu1lkN1ykLd8RRKWouTFCj11WwAAAYJD8zbI");
 	}
 	
 }

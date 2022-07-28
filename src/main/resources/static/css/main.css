@@ -1,0 +1,12 @@
+
+/* ------------------------ main content ------------------------ */
+
+
+.content {
+    height: 400px;
+}
+
+.content-container {
+	padding: 30px;
+	box-sizing: border-box;
+}

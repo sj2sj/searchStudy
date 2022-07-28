@@ -5,7 +5,8 @@
 	   	</div>
     	<div class="header-nav">
     		<a href="#">글쓰기</a>
-    		<button type="button" class="loginBtn">로그인</button>
+    		<!-- <button type="button" class="loginBtn">로그인</button> -->
+    		<a th:href="@{https://kauth.kakao.com/oauth/authorize?client_id=61425084922181b33c5234237ec7b1ff&redirect_uri=http://localhost/searchstudy/oauth/kakao&response_type=code}">로그인</a>
     	</div>
     </header>
 </html>
